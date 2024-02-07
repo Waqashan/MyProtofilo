@@ -14,6 +14,7 @@ const Projects = () => {
       technologies: ["React"],
       githubLink: "https://github.com/Waqashan",
     },
+    
     {
       id: 1,
       title: "Resume Builder",
