@@ -1,5 +1,5 @@
 import { Typography, Grid, Box } from "@mui/material";
-import OurMission from "../OurMission/OurMission";
+import MyProjects from "../OurMission/OurMission";
 
 const AboutUs = () => {
   return (
@@ -18,7 +18,7 @@ const AboutUs = () => {
               maxWidth: "600px",
               maxHeight: "600px",
               margin: "0 auto 20px",
-              overflow: "hidden", // Ensures the image does not overflow its container
+              overflow: "hidden", 
             }}
           >
             <img
@@ -27,12 +27,12 @@ const AboutUs = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // Ensures the image covers the container while maintaining aspect ratio
+                objectFit: "cover", 
               }}
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} px={2}>
           <Typography variant="h3">Hello!</Typography>
           <Typography variant="h3">Iam Waqas Ahmad!</Typography>
           <Typography variant="body1" gutterBottom>
@@ -49,7 +49,7 @@ const AboutUs = () => {
             Suspendisse lacinia felis in magna mattis, ut laoreet ligula
             suscipit.
           </Typography>
-          <Typography variant="body1">
+          {/* <Typography variant="body1">
             Developer: John Doe
             <br />
             Father's Name: Mr. Doe
@@ -59,15 +59,13 @@ const AboutUs = () => {
             University: XYZ University
             <br />
             Phone: +1234567890
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
 
       <Box mt={6}>
-        <Typography variant="h4" textAlign={"center"} gutterBottom>
-          Mission
-        </Typography>
-        <OurMission />
+        
+        <MyProjects />
       </Box>
     </Box>
   );

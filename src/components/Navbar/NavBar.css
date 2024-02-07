@@ -1,5 +1,5 @@
 a.active {
-    color:yellow;
-    padding: 6px 20px;
-    border: 1px solid whitesmoke;
+    font-weight: bold;
+    padding: 6px;
+    border-bottom: 1px solid whitesmoke;
    }

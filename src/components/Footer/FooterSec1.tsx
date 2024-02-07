@@ -5,7 +5,7 @@ import { Grid, Typography, Link } from '@mui/material';
 
 const FooterSec1 = () => {
   return (
-    <footer style={{ backgroundColor: 'black',color:"white", padding: '20px 10px' }}>
+    <footer style={{ backgroundColor: 'black',color:"white", padding: '20px 10px',height:"40vh" }}>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">About Me</Typography>

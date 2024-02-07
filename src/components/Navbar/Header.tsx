@@ -20,7 +20,7 @@ const drawerWidth = 240;
 const navItems = [
   { menu: "Home", route: "/" },
   { menu: "Projects", route: "/projects" },
-  { menu: "Experience", route: "/experience" },
+  { menu: "Skills", route: "/skills" },
   { menu: "About", route: "/about" },
   { menu: "Contact", route: "/contact" }
 ];

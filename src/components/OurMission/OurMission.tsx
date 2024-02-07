@@ -1,4 +1,3 @@
-
 import {
   Container,
   Typography,
@@ -10,39 +9,37 @@ import {
   Box,
 } from "@mui/material";
 
-const OurMission = () => {
+const MyProjects = () => {
   // Dummy project data, replace with your actual project data
   const projects = [
     {
       id: 1,
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/project1.jpg",
+      title: "Resume Builder",
+      description: "Buid your Resume  .",
+      image: "/assets/images/cv.png",
       category: "Web Development",
-      date: "September 2023",
-      technologies: ["React", "Node.js", "MongoDB"],
+
+      technologies: ["React"],
       githubLink: "https://github.com/yourusername/project1",
     },
     {
       id: 2,
-      title: "Project 2",
-      description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "/images/project2.jpg",
-      category: "Mobile App",
-      date: "October 2023",
-      technologies: ["React Native", "Firebase"],
+      title: "Login Page",
+      description: "Simple Login page.",
+      image: "/assets/images/login.jpg",
+      category: "Web Devlopment",
+
+      technologies: ["React.js", "MUI"],
       githubLink: "https://github.com/yourusername/project2",
     },
     {
       id: 3,
-      title: "Project 3",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      image: "/images/project3.jpg",
-      category: "Data Science",
-      date: "November 2023",
-      technologies: ["Python", "TensorFlow", "Pandas"],
+      title: "Inventory app",
+      description: "This is the Inventory management system app",
+      image: "/assets/images/p2.jpg",
+      category: "Web Development",
+
+      technologies: ["Node", "Express", "React", "MongoDb"],
       githubLink: "https://github.com/yourusername/project3",
     },
   ];
@@ -50,6 +47,10 @@ const OurMission = () => {
   return (
     <Box py={6}>
       <Container maxWidth="lg">
+        <Typography variant="h3" textAlign={"center"} mb={8}>
+          {" "}
+          Projects
+        </Typography>
         <Grid container spacing={4}>
           {projects.map((project) => (
             <Grid item key={project.id} xs={12} sm={6} md={4}>
@@ -80,9 +81,7 @@ const OurMission = () => {
                     <Typography variant="body2" color="textSecondary">
                       Category: {project.category}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary">
-                      Date: {project.date}
-                    </Typography>
+
                     <Typography
                       variant="body2"
                       color="textSecondary"
@@ -101,4 +100,4 @@ const OurMission = () => {
   );
 };
 
-export default OurMission;
+export default MyProjects;
