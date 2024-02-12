@@ -15,14 +15,14 @@ const SkillsSec1 = () => {
     { name: "RESTful APIs", image: "/assets/images/rest.png" },
   ];
 
-  const softSkills = [
-    { name: "Communication", image: "/assets/images/cv.png" },
-    { name: "Problem-solving", image: "/assets/images/cv.png" },
-    { name: "Teamwork", image: "/assets/images/cv.png" },
-    { name: "Time management", image: "/assets/images/cv.png" },
-    { name: "Adaptability", image: "/assets/images/cv.png" },
-    { name: "Creativity", image: "/assets/images/cv.png" },
-  ];
+  // const softSkills = [
+  //   { name: "Communication", image: "/assets/images/cv.png" },
+  //   { name: "Problem-solving", image: "/assets/images/cv.png" },
+  //   { name: "Teamwork", image: "/assets/images/cv.png" },
+  //   { name: "Time management", image: "/assets/images/cv.png" },
+  //   { name: "Adaptability", image: "/assets/images/cv.png" },
+  //   { name: "Creativity", image: "/assets/images/cv.png" },
+  // ];
 
   const renderSkills = (skills: any) => {
     return (

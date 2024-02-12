@@ -18,7 +18,7 @@ const AboutUs = () => {
               maxWidth: "600px",
               maxHeight: "600px",
               margin: "0 auto 20px",
-              overflow: "hidden", 
+              overflow: "hidden",
             }}
           >
             <img
@@ -27,7 +27,7 @@ const AboutUs = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", 
+                objectFit: "cover",
               }}
             />
           </Box>
@@ -36,18 +36,22 @@ const AboutUs = () => {
           <Typography variant="h3">Hello!</Typography>
           <Typography variant="h3">Iam Waqas Ahmad!</Typography>
           <Typography variant="body1" gutterBottom>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-            justo sit amet metus fringilla blandit. Integer id ex eget est
-            mollis semper non nec lacus. Proin posuere lacus id turpis finibus
-            rhoncus. Curabitur at convallis dui. Sed varius aliquet magna eu
-            suscipit. Nulla ultricies ante vitae urna pharetra ultrices.
+            I am a dedicated and talented MERN Stack developer, driven by a
+            passion for coding and a desire to create impactful web solutions.
+            With a wealth of experience and a deep understanding of the latest
+            technologies and best practices, I am confident in my ability to
+            deliver high-quality web applications that meet the needs of
+            businesses and users alike.I am always looking for new challenges
+            and opportunities to grow as a developer. My expertise in MongoDB,
+            Express, React, and Node.js allows me to develop a wide range of web
+            applications, from simple landing pages to complex e-commerce
+            platforms.
           </Typography>
           <Typography variant="body1">
-            Fusce rutrum nisi ut dolor efficitur, ut aliquet purus tincidunt.
-            Phasellus eget lectus quis velit ullamcorper ullamcorper vel at
-            lacus. Phasellus volutpat orci at magna pharetra facilisis.
-            Suspendisse lacinia felis in magna mattis, ut laoreet ligula
-            suscipit.
+            I bring a creative and practical approach to every project,
+            leveraging the latest technologies and tools to deliver the best
+            possible outcome. I am a strong communicator and collaborator, and I
+            believe that great web development is a team sport.
           </Typography>
           {/* <Typography variant="body1">
             Developer: John Doe
@@ -64,7 +68,6 @@ const AboutUs = () => {
       </Grid>
 
       <Box mt={6}>
-        
         <MyProjects />
       </Box>
     </Box>
