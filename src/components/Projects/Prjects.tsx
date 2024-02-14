@@ -16,47 +16,47 @@ const Projects = () => {
     },
     
     {
-      id: 1,
-      title: "Resume Builder",
-      description: "Buid your Resume  .",
-      image: "/assets/images/cv.png",
-      category: "Web Development",
-
-      technologies: ["React"],
-      githubLink: "https://github.com/Waqashan",
-    },
-    {
-      id: 1,
-      title: "Resume Builder",
-      description: "Buid your Resume  .",
-      image: "/assets/images/cv.png",
-      category: "Web Development",
-
-      technologies: ["React"],
-      githubLink: "https://github.com/Waqashan",
-    },
-    {
-      id: 1,
-      title: "Resume Builder",
-      description: "Buid your Resume  .",
-      image: "/assets/images/cv.png",
-      category: "Web Development",
-
-      technologies: ["React"],
-      githubLink: "https://github.com/Waqashan",
-    },
-    {
-      id: 1,
-      title: "Resume Builder",
-      description: "Buid your Resume  .",
-      image: "/assets/images/cv.png",
-      category: "Web Development",
-
-      technologies: ["React"],
-      githubLink: "https://github.com/Waqashan",
-    },
-    {
       id: 2,
+      title: "Resume Builder",
+      description: "Buid your Resume  .",
+      image: "/assets/images/cv.png",
+      category: "Web Development",
+
+      technologies: ["React"],
+      githubLink: "https://github.com/Waqashan",
+    },
+    {
+      id: 3,
+      title: "Resume Builder",
+      description: "Buid your Resume  .",
+      image: "/assets/images/cv.png",
+      category: "Web Development",
+
+      technologies: ["React"],
+      githubLink: "https://github.com/Waqashan",
+    },
+    {
+      id: 4,
+      title: "Resume Builder",
+      description: "Buid your Resume  .",
+      image: "/assets/images/cv.png",
+      category: "Web Development",
+
+      technologies: ["React"],
+      githubLink: "https://github.com/Waqashan",
+    },
+    {
+      id: 5,
+      title: "Resume Builder",
+      description: "Buid your Resume  .",
+      image: "/assets/images/cv.png",
+      category: "Web Development",
+
+      technologies: ["React"],
+      githubLink: "https://github.com/Waqashan",
+    },
+    {
+      id: 6,
       title: "Login Page",
       description: "Simple Login page.",
       image: "/assets/images/login.jpg",
@@ -66,7 +66,7 @@ const Projects = () => {
       githubLink: "https://github.com/Waqashan",
     },
     {
-      id: 3,
+      id: 7,
       title: "Inventory app",
       description: "This is the Inventory management system app",
       image: "/assets/images/p2.jpg",

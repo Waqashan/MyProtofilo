@@ -10,7 +10,7 @@ const FooterSec1 = () => {
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">About Me</Typography>
           <Typography variant="body2" color="white">
-            Hi, I'm [Waqas Ahmad]. I'm a passionate web developer.
+            Hi, I'm Waqas Ahmad. I'm a passionate web developer.
       
            
           </Typography>
@@ -30,7 +30,7 @@ const FooterSec1 = () => {
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">Contact Me</Typography>
           <Typography variant="body2" color="white">
-            Email: example@example.com
+            Email: waqaskhan26394@gmail.com
           </Typography>
           <Typography variant="body2" color="white">
             Phone: +923179971588
@@ -42,7 +42,7 @@ const FooterSec1 = () => {
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">Social Media</Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="https://github.com/example">GitHub</Link>
+            <Link  sx={{color:"white"}} href="https://github.com/Waqashan">GitHub</Link>
           </Typography>
           <Typography variant="body2" color="textSecondary">
             <Link  sx={{color:"white"}} href="https://linkedin.com/in/example">LinkedIn</Link>

@@ -1,13 +1,15 @@
 import { Container, Typography, Button, Grid } from "@mui/material";
 import Box from "@mui/material/Box"; // Import Box from @mui/material
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  let navigate=useNavigate();
+
   return (
     <Box
       sx={{
         background: "linear-gradient(to bottom, #f0f2f5, #fff)",
         padding: "50px 0",
-        marginTop: { xs:"30px",sm: "0" },
+        marginTop: { xs:"40px",sm: "40px",md:"0" },
       }}
     >
       <Container maxWidth="lg">
@@ -26,12 +28,12 @@ const Home = () => {
             </Typography>
             <Grid container spacing={2} justifyContent="center">
               <Grid item>
-                <Button variant="contained" color="primary" href="#projects">
+                <Button onClick={()=>{navigate('/projects')}} variant="contained" color="primary" href="#projects">
                   View Projects
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="outlined" color="primary" href="#contact">
+                <Button onClick={()=>{navigate('/contact')}} variant="outlined" color="primary" href="#contact">
                   Contact Me
                 </Button>
               </Grid>
