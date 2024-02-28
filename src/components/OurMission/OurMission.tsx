@@ -53,7 +53,12 @@ const MyProjects = () => {
         </Typography>
         <Grid container spacing={4}>
           {projects.map((project) => (
-            <Grid item key={project.id} xs={12} sm={6} md={4}>
+            <Grid item key={project.id} xs={12} sm={6} md={4} sx={{
+              ":hover":{
+                transform:" translateY(-20px)",
+                
+              }
+            }}>
               <Card sx={{ position: "relative" }}>
                 <CardActionArea
                   component="a"

@@ -1,5 +1,14 @@
-a.active {
-    font-weight: bold;
-    padding: 6px;
-    border-bottom: 1px solid whitesmoke;
-   }
+.LargeScreen a.active {
+  font-weight: bold;
+  padding: 6px 20px;
+  
+  border: 1px solid white;
+  
+}
+
+.mobileMenu a.active {
+  font-weight: bold;
+  padding: 6px;
+  color: white;
+  background-color: black;
+}

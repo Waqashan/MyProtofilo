@@ -5,16 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom"; // Import NavLink for navigation
-import "./NavBar.css"; 
+import MenuIcon from "@mui/icons-material/Menu";
+import "./NavBar.css";
 
 const drawerWidth = 240;
 const navItems = [
@@ -22,8 +18,9 @@ const navItems = [
   { menu: "Projects", route: "/projects" },
   { menu: "Skills", route: "/skills" },
   { menu: "About", route: "/about" },
-  { menu: "Contact", route: "/contact" }
+  { menu: "Contact", route: "/contact" },
 ];
+
 function Header(props: any) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -33,29 +30,26 @@ function Header(props: any) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",padding:"0 10px" }}
+    className="mobileMenu"
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
         MyProfile
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item.menu} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText
-                primary={
-                  <NavLink
-                    to={item.route}
-                
-                  >
-                    {item.menu}
-                  </NavLink>
-                }
-              />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      {navItems.map((item) => (
+        <Button
+          key={item.menu}
+          
+
+          sx={{ color: "black", width: "100%" }}
+          component={NavLink}
+          to={item.route}
+          onClick={handleDrawerToggle}
+        >
+          {item.menu}
+        </Button>
+      ))}
     </Box>
   );
 
@@ -63,7 +57,7 @@ function Header(props: any) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ border: "1px solid black", marginTop: "20px" }} >
+    <Box sx={{ border: "1px solid black", marginTop: "20px" }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ background: "black", padding: "10px 0" }}>
         <Toolbar sx={{ width: { xs: "100%", md: "83%" }, margin: "0 auto" }}>
@@ -79,11 +73,11 @@ function Header(props: any) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "block"} }}
           >
             MyProfile
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "block" } }} className="LargeScreen">
             {navItems.map((item) => (
               <Button
                 key={item.menu}
@@ -104,7 +98,7 @@ function Header(props: any) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },

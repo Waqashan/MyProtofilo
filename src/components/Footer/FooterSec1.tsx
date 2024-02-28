@@ -1,30 +1,34 @@
-
-
-
-import { Grid, Typography, Link } from '@mui/material';
+import { Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const FooterSec1 = () => {
   return (
-    <footer style={{ backgroundColor: 'black',color:"white", padding: '20px 10px'}}>
+    <footer
+      style={{ backgroundColor: "black", color: "white", padding: "20px 10px" }}
+    >
       <Grid container justifyContent="center" spacing={2}>
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">About Me</Typography>
           <Typography variant="body2" color="white">
             Hi, I'm Waqas Ahmad. I'm a passionate web developer.
-      
-           
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">Links</Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="#about">About</Link>
+            <Link style={{ color: "white",textDecoration:"none"  }} to="/about">
+              About
+            </Link>
           </Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="#portfolio">Portfolio</Link>
+            <Link style={{ color: "white" ,textDecoration:"none" }} to="/">
+              Portfolio
+            </Link>
           </Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="#contact">Contact</Link>
+            <Link style={{ color: "white",textDecoration:"none"  }} to="/contact">
+              Contact
+            </Link>
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -42,13 +46,34 @@ const FooterSec1 = () => {
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6">Social Media</Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="https://github.com/Waqashan">GitHub</Link>
+            <a
+              style={{ color: "white",textDecoration:"none"  }}
+              href="https://github.com/Waqashan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="https://linkedin.com/in/example">LinkedIn</Link>
+            <a
+              style={{ color: "white" ,textDecoration:"none" }}
+              href="https://linkedin.com/in/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
           </Typography>
           <Typography variant="body2" color="textSecondary">
-            <Link  sx={{color:"white"}} href="https://twitter.com/example">Twitter</Link>
+            <a
+              style={{ color: "white",textDecoration:"none" }}
+              href="https://twitter.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
           </Typography>
         </Grid>
       </Grid>
